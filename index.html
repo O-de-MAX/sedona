@@ -6,7 +6,134 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-
+  <body class="container">
+    <header>
+      <nav class="header-nav clearfix">
+        <div class="nav-left">
+          <a href="#">Информация</a>
+          <a href="#">Фото и видео</a>
+        </div>
+        <div class="nav-center">
+          <div class="header-logo-wrap">
+            <a class="header-logo"><img src="img/top-logo.png" width="67" height="56" alt="Sedona"></a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="#">Карта штата</a>
+          <a href="hotels.html">Гостиницы</a>
+        </div>
+      </nav>
+    </header>
+    <main class="features">
+      <img class="big-logo" src="img/site-header.jpg" width="768" height="513" alt="Welcom to Sedona">
+      <div class="features-content">
+        <h1 class="features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p>
+          рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
+        </p>
+      </div>
+      <div class="features-img">
+        <div class="features-item features-item-top">
+          <b class="features-name">настоящий городок</b>
+          <i>-№1-</i>
+          <p>
+            седона - не аттракцион для туристов, там течет своя жизнь
+          </p>
+        </div>
+        <img src="img/index-img-1.jpg" width="512" height="256" alt="Настоящий городок">
+      </div>
+      <div class="features-icon clearfix">
+        <div class="features-item features-item-home">
+          <b class="features-name">Жилье</b>
+          <p>
+            рекомендуем пожить в настоящем мотеле, все как в кино!
+          </p>
+        </div>
+        <div class="features-item features-item-food">
+          <b class="features-name">Еда</b>
+          <p>
+            всегда заказывайте фирменный бургер, вы не разочаруетесь!
+          </p>
+        </div>
+        <div class="features-item features-item-present">
+          <b class="features-name">Сувениры</b>
+          <p>
+            не только китайского, но и местного производства!
+          </p>
+        </div>
+      </div>
+      <div class="features-img">
+        <img src="img/index-img-2.jpg" width="512" height="256" alt="Мост дьявола">
+        <div class="features-item features-item-bottom">
+          <b class="features-name">Там есть<br>мост дьявола</b>
+          <i>-№2-</i>
+          <p>
+            да, по нему можно пройти! если конечно вы осмелитесь
+          </p>
+        </div>
+      </div>
+      <div class="features-text clearfix">
+        <div class="features-item">
+          <b class="features-name">Небольшая площадь</b>
+          <i>-№3-</i>
+          <p>
+            все достопримеча- тельности находятся очень близко
+          </p>
+        </div>
+        <div class="features-item">
+          <b class="features-name">Красивая дорога</b>
+          <i>-№4-</i>
+          <p>
+            ехать в седону из лас-вегаса совсем не скучно!
+          </p>
+        </div>
+        <div class="features-item">
+          <b class="features-name">мало<br>туристов</b>
+          <i>-№5-</i>
+          <p>
+            большинство едет в гранд каньон и толпится там
+          </p>
+        </div>
+      </div>
+      <div class="features-content interest">
+        <h1 class="features-title">Заинтересовались?</h1>
+        <p>
+          укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <button class="btn search-btn" type="button" name="search-hotel">поиск гостиницы в седоне</button>
+      </div>
+    </main>
+    <footer>
+      <b class="footer-hashtag">#visitsedona</b>
+      <div class="footer-social">
+        <a class="btn social-btn social-btn-twitter" href="#">твиттер</a>
+        <a class="btn social-btn social-btn-fb" href="#">фэйсбук</a>
+        <a class="btn social-btn social-btn-youtube" href="#">ютюб</a>
+      </div>
+      <div class="footer-copyright">
+        <a class="copyright" href="#">HTMLAcademy</a>
+      </div>
+    </footer>
+    <div class="modal-content modal-search">
+      <form class="modal-search-hotels" action="index.html" method="post">
+        <label>
+          Дата заезда:
+          <input type="date" name="data-check-in" required>
+        </label>
+        <label>
+          Дата выезда:
+          <input type="date" name="data-check-out" required>
+        </label>
+        <label>
+          Взрослые:
+          <input type="number" name="groun" value="2" required>
+        </label>
+        <label>
+          Дети:
+          <input type="number" name="children" value="0" required>
+        </label>
+        <button class="btn modal-btn" type="button" name="find"></button>
+      </form>
+    </div>
   </body>
 </html>
